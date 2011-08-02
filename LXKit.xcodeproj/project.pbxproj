@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C224C5A513E778EE00869B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C224C5A413E778EE00869B50 /* Foundation.framework */; };
+		C224C5B313E778EE00869B50 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C224C5B213E778EE00869B50 /* SenTestingKit.framework */; };
+		C224C5B513E778EF00869B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C224C5B413E778EE00869B50 /* UIKit.framework */; };
+		C224C5B613E778EF00869B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C224C5A413E778EE00869B50 /* Foundation.framework */; };
+		C224C5B813E778EF00869B50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C224C5B713E778EF00869B50 /* CoreGraphics.framework */; };
+		C224C5BB13E778EF00869B50 /* libLXKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224C5A113E778EE00869B50 /* libLXKit.a */; };
+		C224C5C113E778EF00869B50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C224C5BF13E778EF00869B50 /* InfoPlist.strings */; };
+		C224C5C313E778EF00869B50 /* LXKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C224C5C213E778EF00869B50 /* LXKitTests.h */; };
+		C224C5C513E778EF00869B50 /* LXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5C413E778EF00869B50 /* LXKitTests.m */; };
+		C224C5D013E7793500869B50 /* UIColor+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C224C5CE13E7793500869B50 /* UIColor+Additions.h */; };
+		C224C5D113E7793500869B50 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5CF13E7793500869B50 /* UIColor+Additions.m */; };
+		C224C5D413E7794900869B50 /* LXCoreDataOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C224C5D213E7794900869B50 /* LXCoreDataOperation.h */; };
+		C224C5D513E7794900869B50 /* LXCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5D313E7794900869B50 /* LXCoreDataOperation.m */; };
+		C224C5D813E779A200869B50 /* LXMOContext.h in Headers */ = {isa = PBXBuildFile; fileRef = C224C5D613E779A200869B50 /* LXMOContext.h */; };
+		C224C5D913E779A200869B50 /* LXMOContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5D713E779A200869B50 /* LXMOContext.m */; };
+		C224C5FE13E794D500869B50 /* LXBlockView.h in Headers */ = {isa = PBXBuildFile; fileRef = C224C5FC13E794D500869B50 /* LXBlockView.h */; };
+		C224C5FF13E794D500869B50 /* LXBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5FD13E794D500869B50 /* LXBlockView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C224C5B913E778EF00869B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224C59813E778EE00869B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C224C5A013E778EE00869B50;
+			remoteInfo = LXKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C224C5A113E778EE00869B50 /* libLXKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLXKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C224C5A413E778EE00869B50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C224C5A813E778EE00869B50 /* LXKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXKit-Prefix.pch"; sourceTree = "<group>"; };
+		C224C5B113E778EE00869B50 /* LXKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C224C5B213E778EE00869B50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C224C5B413E778EE00869B50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C224C5B713E778EF00869B50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C224C5BE13E778EF00869B50 /* LXKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LXKitTests-Info.plist"; sourceTree = "<group>"; };
+		C224C5C013E778EF00869B50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C224C5C213E778EF00869B50 /* LXKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXKitTests.h; sourceTree = "<group>"; };
+		C224C5C413E778EF00869B50 /* LXKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKitTests.m; sourceTree = "<group>"; };
+		C224C5CE13E7793500869B50 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		C224C5CF13E7793500869B50 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		C224C5D213E7794900869B50 /* LXCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCoreDataOperation.h; sourceTree = "<group>"; };
+		C224C5D313E7794900869B50 /* LXCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCoreDataOperation.m; sourceTree = "<group>"; };
+		C224C5D613E779A200869B50 /* LXMOContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMOContext.h; sourceTree = "<group>"; };
+		C224C5D713E779A200869B50 /* LXMOContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMOContext.m; sourceTree = "<group>"; };
+		C224C5FC13E794D500869B50 /* LXBlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXBlockView.h; sourceTree = "<group>"; };
+		C224C5FD13E794D500869B50 /* LXBlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXBlockView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C224C59E13E778EE00869B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C224C5A513E778EE00869B50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C224C5AD13E778EE00869B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C224C5B313E778EE00869B50 /* SenTestingKit.framework in Frameworks */,
+				C224C5B513E778EF00869B50 /* UIKit.framework in Frameworks */,
+				C224C5B613E778EF00869B50 /* Foundation.framework in Frameworks */,
+				C224C5B813E778EF00869B50 /* CoreGraphics.framework in Frameworks */,
+				C224C5BB13E778EF00869B50 /* libLXKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C224C59613E778EE00869B50 = {
+			isa = PBXGroup;
+			children = (
+				C224C5D613E779A200869B50 /* LXMOContext.h */,
+				C224C5D713E779A200869B50 /* LXMOContext.m */,
+				C224C5D213E7794900869B50 /* LXCoreDataOperation.h */,
+				C224C5D313E7794900869B50 /* LXCoreDataOperation.m */,
+				C224C5CE13E7793500869B50 /* UIColor+Additions.h */,
+				C224C5CF13E7793500869B50 /* UIColor+Additions.m */,
+				C224C5FC13E794D500869B50 /* LXBlockView.h */,
+				C224C5FD13E794D500869B50 /* LXBlockView.m */,
+				C224C5A613E778EE00869B50 /* LXKit */,
+				C224C5BC13E778EF00869B50 /* LXKitTests */,
+				C224C5A313E778EE00869B50 /* Frameworks */,
+				C224C5A213E778EE00869B50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C224C5A213E778EE00869B50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224C5A113E778EE00869B50 /* libLXKit.a */,
+				C224C5B113E778EE00869B50 /* LXKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224C5A313E778EE00869B50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C224C5A413E778EE00869B50 /* Foundation.framework */,
+				C224C5B213E778EE00869B50 /* SenTestingKit.framework */,
+				C224C5B413E778EE00869B50 /* UIKit.framework */,
+				C224C5B713E778EF00869B50 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C224C5A613E778EE00869B50 /* LXKit */ = {
+			isa = PBXGroup;
+			children = (
+				C224C5A713E778EE00869B50 /* Supporting Files */,
+			);
+			path = LXKit;
+			sourceTree = "<group>";
+		};
+		C224C5A713E778EE00869B50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C224C5A813E778EE00869B50 /* LXKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C224C5BC13E778EF00869B50 /* LXKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C224C5C213E778EF00869B50 /* LXKitTests.h */,
+				C224C5C413E778EF00869B50 /* LXKitTests.m */,
+				C224C5BD13E778EF00869B50 /* Supporting Files */,
+			);
+			path = LXKitTests;
+			sourceTree = "<group>";
+		};
+		C224C5BD13E778EF00869B50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C224C5BE13E778EF00869B50 /* LXKitTests-Info.plist */,
+				C224C5BF13E778EF00869B50 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C224C59F13E778EE00869B50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C224C5D013E7793500869B50 /* UIColor+Additions.h in Headers */,
+				C224C5D413E7794900869B50 /* LXCoreDataOperation.h in Headers */,
+				C224C5D813E779A200869B50 /* LXMOContext.h in Headers */,
+				C224C5FE13E794D500869B50 /* LXBlockView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C224C5A013E778EE00869B50 /* LXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C224C5C813E778EF00869B50 /* Build configuration list for PBXNativeTarget "LXKit" */;
+			buildPhases = (
+				C224C59D13E778EE00869B50 /* Sources */,
+				C224C59E13E778EE00869B50 /* Frameworks */,
+				C224C59F13E778EE00869B50 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXKit;
+			productName = LXKit;
+			productReference = C224C5A113E778EE00869B50 /* libLXKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C224C5B013E778EE00869B50 /* LXKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C224C5CB13E778EF00869B50 /* Build configuration list for PBXNativeTarget "LXKitTests" */;
+			buildPhases = (
+				C224C5AC13E778EE00869B50 /* Sources */,
+				C224C5AD13E778EE00869B50 /* Frameworks */,
+				C224C5AE13E778EE00869B50 /* Resources */,
+				C224C5AF13E778EE00869B50 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C224C5BA13E778EF00869B50 /* PBXTargetDependency */,
+			);
+			name = LXKitTests;
+			productName = LXKitTests;
+			productReference = C224C5B113E778EE00869B50 /* LXKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C224C59813E778EE00869B50 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C224C59B13E778EE00869B50 /* Build configuration list for PBXProject "LXKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C224C59613E778EE00869B50;
+			productRefGroup = C224C5A213E778EE00869B50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C224C5A013E778EE00869B50 /* LXKit */,
+				C224C5B013E778EE00869B50 /* LXKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C224C5AE13E778EE00869B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C224C5C113E778EF00869B50 /* InfoPlist.strings in Resources */,
+				C224C5C313E778EF00869B50 /* LXKitTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C224C5AF13E778EE00869B50 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C224C59D13E778EE00869B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C224C5D113E7793500869B50 /* UIColor+Additions.m in Sources */,
+				C224C5D513E7794900869B50 /* LXCoreDataOperation.m in Sources */,
+				C224C5D913E779A200869B50 /* LXMOContext.m in Sources */,
+				C224C5FF13E794D500869B50 /* LXBlockView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C224C5AC13E778EE00869B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C224C5C513E778EF00869B50 /* LXKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C224C5BA13E778EF00869B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C224C5A013E778EE00869B50 /* LXKit */;
+			targetProxy = C224C5B913E778EF00869B50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C224C5BF13E778EF00869B50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C224C5C013E778EF00869B50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C224C5C613E778EF00869B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C224C5C713E778EF00869B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C224C5C913E778EF00869B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LXKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LXKit/LXKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C224C5CA13E778EF00869B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LXKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LXKit/LXKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C224C5CC13E778EF00869B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LXKit/LXKit-Prefix.pch";
+				INFOPLIST_FILE = "LXKitTests/LXKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C224C5CD13E778EF00869B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LXKit/LXKit-Prefix.pch";
+				INFOPLIST_FILE = "LXKitTests/LXKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C224C59B13E778EE00869B50 /* Build configuration list for PBXProject "LXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C224C5C613E778EF00869B50 /* Debug */,
+				C224C5C713E778EF00869B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C224C5C813E778EF00869B50 /* Build configuration list for PBXNativeTarget "LXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C224C5C913E778EF00869B50 /* Debug */,
+				C224C5CA13E778EF00869B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C224C5CB13E778EF00869B50 /* Build configuration list for PBXNativeTarget "LXKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C224C5CC13E778EF00869B50 /* Debug */,
+				C224C5CD13E778EF00869B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C224C59813E778EE00869B50 /* Project object */;
+}
