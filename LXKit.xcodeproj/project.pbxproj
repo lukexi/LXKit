@@ -24,6 +24,11 @@
 		C224C5D913E779A200869B50 /* LXMOContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5D713E779A200869B50 /* LXMOContext.m */; };
 		C224C5FE13E794D500869B50 /* LXBlockView.h in Headers */ = {isa = PBXBuildFile; fileRef = C224C5FC13E794D500869B50 /* LXBlockView.h */; };
 		C224C5FF13E794D500869B50 /* LXBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C224C5FD13E794D500869B50 /* LXBlockView.m */; };
+		C28E833513ECD81D00B3E118 /* LXPreviewScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = C28E833313ECD81D00B3E118 /* LXPreviewScrollView.h */; };
+		C28E833613ECD81D00B3E118 /* LXPreviewScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E833413ECD81D00B3E118 /* LXPreviewScrollView.m */; };
+		C28E833A13ECD89E00B3E118 /* UIView+FrameAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C28E833813ECD89E00B3E118 /* UIView+FrameAdditions.h */; };
+		C28E833B13ECD89E00B3E118 /* UIView+FrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E833913ECD89E00B3E118 /* UIView+FrameAdditions.m */; };
+		C28E833D13ECD8ED00B3E118 /* LXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C28E833C13ECD8ED00B3E118 /* LXKit.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		C224C5D713E779A200869B50 /* LXMOContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMOContext.m; sourceTree = "<group>"; };
 		C224C5FC13E794D500869B50 /* LXBlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXBlockView.h; sourceTree = "<group>"; };
 		C224C5FD13E794D500869B50 /* LXBlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXBlockView.m; sourceTree = "<group>"; };
+		C28E833313ECD81D00B3E118 /* LXPreviewScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPreviewScrollView.h; sourceTree = "<group>"; };
+		C28E833413ECD81D00B3E118 /* LXPreviewScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPreviewScrollView.m; sourceTree = "<group>"; };
+		C28E833813ECD89E00B3E118 /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
+		C28E833913ECD89E00B3E118 /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
+		C28E833C13ECD8ED00B3E118 /* LXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,14 +95,19 @@
 		C224C59613E778EE00869B50 = {
 			isa = PBXGroup;
 			children = (
+				C28E833C13ECD8ED00B3E118 /* LXKit.h */,
 				C224C5D613E779A200869B50 /* LXMOContext.h */,
 				C224C5D713E779A200869B50 /* LXMOContext.m */,
 				C224C5D213E7794900869B50 /* LXCoreDataOperation.h */,
 				C224C5D313E7794900869B50 /* LXCoreDataOperation.m */,
 				C224C5CE13E7793500869B50 /* UIColor+Additions.h */,
 				C224C5CF13E7793500869B50 /* UIColor+Additions.m */,
+				C28E833813ECD89E00B3E118 /* UIView+FrameAdditions.h */,
+				C28E833913ECD89E00B3E118 /* UIView+FrameAdditions.m */,
 				C224C5FC13E794D500869B50 /* LXBlockView.h */,
 				C224C5FD13E794D500869B50 /* LXBlockView.m */,
+				C28E833313ECD81D00B3E118 /* LXPreviewScrollView.h */,
+				C28E833413ECD81D00B3E118 /* LXPreviewScrollView.m */,
 				C224C5A613E778EE00869B50 /* LXKit */,
 				C224C5BC13E778EF00869B50 /* LXKitTests */,
 				C224C5A313E778EE00869B50 /* Frameworks */,
@@ -166,6 +181,9 @@
 				C224C5D413E7794900869B50 /* LXCoreDataOperation.h in Headers */,
 				C224C5D813E779A200869B50 /* LXMOContext.h in Headers */,
 				C224C5FE13E794D500869B50 /* LXBlockView.h in Headers */,
+				C28E833513ECD81D00B3E118 /* LXPreviewScrollView.h in Headers */,
+				C28E833A13ECD89E00B3E118 /* UIView+FrameAdditions.h in Headers */,
+				C28E833D13ECD8ED00B3E118 /* LXKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +286,8 @@
 				C224C5D513E7794900869B50 /* LXCoreDataOperation.m in Sources */,
 				C224C5D913E779A200869B50 /* LXMOContext.m in Sources */,
 				C224C5FF13E794D500869B50 /* LXBlockView.m in Sources */,
+				C28E833613ECD81D00B3E118 /* LXPreviewScrollView.m in Sources */,
+				C28E833B13ECD89E00B3E118 /* UIView+FrameAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
