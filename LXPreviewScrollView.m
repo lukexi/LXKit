@@ -26,7 +26,7 @@
 @end
 
 @implementation LXPreviewScrollView
-@synthesize scrollView, pageSize, dropShadow, delegate;
+@synthesize scrollView, pageSize, delegate;
 @synthesize scrollViewPages;
 @synthesize verticalScrolling, preview;
 @synthesize leftTapRect, rightTapRect;
@@ -54,7 +54,6 @@
     self.loadNeighboringPagesToDistance = 1;
     self.preview = YES;
     firstLayout = YES;
-    dropShadow = YES;
     self.leftTapRect = CGRectZero;
     self.rightTapRect = CGRectZero;
     
@@ -147,46 +146,8 @@
 	}
 }
 
-// Shadow code from http://cocoawithlove.com/2009/08/adding-shadow-effects-to-uitableview.html
-- (CAGradientLayer *)shadowAsInverse:(BOOL)inverse
-{
-    CAGradientLayer *newShadow = [[[CAGradientLayer alloc] init] autorelease];
-    CGRect newShadowFrame =	CGRectMake(0, 0, self.frame.size.width, inverse ? SHADOW_INVERSE_HEIGHT : SHADOW_HEIGHT);
-    newShadow.frame = newShadowFrame;
-    CGColorRef darkColor =[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:inverse ? (SHADOW_INVERSE_HEIGHT / SHADOW_HEIGHT) * 0.5 : 0.5].CGColor;
-    CGColorRef lightColor =	[self.backgroundColor colorWithAlphaComponent:0.0].CGColor;
-    newShadow.colors = [NSArray arrayWithObjects: (id)(inverse ? lightColor : darkColor), (id)(inverse ? darkColor : lightColor), nil];
-    return newShadow;
-}
-
 - (void)layoutSubviews
-{
-	// We need to do some setup once the view is visible. This will only be done once.
-    if (firstLayout && dropShadow) 
-    {
-        // Add drop shadow to add that 3d effect
-        CAGradientLayer *topShadowLayer = [self shadowAsInverse:NO];
-        CAGradientLayer *bottomShadowLayer = [self shadowAsInverse:YES];
-        [self.layer insertSublayer:topShadowLayer atIndex:0];
-        [self.layer insertSublayer:bottomShadowLayer atIndex:0];
-        
-        [CATransaction begin];
-        [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
-        
-        // Position and stretch the shadow layers to fit
-        CGRect topShadowLayerFrame = topShadowLayer.frame;
-        topShadowLayerFrame.size.width = self.frame.size.width;
-        topShadowLayerFrame.origin.y = 0;
-        topShadowLayer.frame = topShadowLayerFrame;
-        
-        CGRect bottomShadowLayerFrame = bottomShadowLayer.frame;
-        bottomShadowLayerFrame.size.width = self.frame.size.width;
-        bottomShadowLayerFrame.origin.y = self.frame.size.height - bottomShadowLayer.frame.size.height;
-        bottomShadowLayer.frame = bottomShadowLayerFrame;
-        
-        [CATransaction commit];
-    }
-    
+{    
 	if (firstLayout)
 	{
         

@@ -40,7 +40,6 @@
 @property (nonatomic, assign) IBOutlet id <LXPreviewScrollViewDelegate> delegate;
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, assign) CGSize pageSize;
-@property (nonatomic, assign) BOOL dropShadow;
 @property (nonatomic, retain) NSMutableArray *scrollViewPages;
 @property (nonatomic) BOOL verticalScrolling;
 @property (nonatomic) BOOL preview;

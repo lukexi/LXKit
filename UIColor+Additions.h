@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define ARC4RANDOM_MAX      0x100000000
+
 @interface UIColor (UIColor_Additions)
 
 + (UIColor *)lx_randomColor;

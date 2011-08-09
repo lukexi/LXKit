@@ -8,7 +8,7 @@
 
 #import "UIColor+Additions.h"
 
-#define ARC4RANDOM_MAX      0x100000000
+
 
 @implementation UIColor (UIColor_Additions)
 
